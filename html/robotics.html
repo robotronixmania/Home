@@ -1,0 +1,449 @@
+<!doctype html><!-- This is a comment --><html lang="en"><head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"> 
+    <title>Robotics</title> 
+ <style type="text/css" id="dcoder_stylesheet">.content div.cnt{
+  box-shadow:0 0 1em rgba(0,0,0,1);background-size:cover;background-color:white;
+  padding:0.4em;
+  }
+
+
+
+.typ{  
+ text-align:center;
+ text-decoration:underline;
+
+}
+ul#topics li a{
+  color:white;
+  font-size:1em;
+}
+
+body {
+  background-image: linear-gradient(to right,#0052d4,#4364f7,#6fb1fc);
+  background-color: #cccccc;
+  height: "device-height";
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*THE NAVIGATION BAR [Starting]*/
+
+.sidenav {
+  height: 100%;
+  width: 16%;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding: 0px 0px 0px 0px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  text-decoration: none;
+  font-size: 15px;
+  color: solid white;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: white;
+}
+
+/* Main content */
+.main {
+  margin-left: 70px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: grey;
+}
+.dropdown-container a{
+  padding-top:4px;
+  padding-bottom:4px;
+  text-decoration:none;
+  font-size:12px;
+  color: solid white;
+}
+/* Optional: Style the caret down icon */ 
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+ul#topnav{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+li.tpnv {
+  float: left;
+}
+ul#topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 15px 15px 15px;
+  text-decoration: none;
+}
+/* Change the link color to #111 (black) on hover */
+  li.tpnv a:hover:not(.active) {
+  background-color: #111;
+}
+
+/*THE NAVIGATION BAR[ENDING]*/
+
+ul#ftr{
+  list-style-type:none;
+}
+a.ftr{
+  font-family:Cursive;
+  font-size:1.5em;
+  text-decoration:none;
+  color:white;
+}
+img.social{
+  margin:5px;height:27px;width:27px;
+}
+
+/* The Content */
+.content{
+  margin-top:25px;
+  margin-bottom:3em;
+  border:2px solid white;
+  border-radius:25px;
+  background-size:cover;
+  padding:10px;
+}
+/* Content Ending */
+
+hr.btn{
+  height:0.9px;
+  width:24px;
+}
+#grad {
+  margin-bottom:2px;
+  height:20em;
+  background-image: linear-gradient(to bottom right,#1a2980,#1d2b64);
+}
+/*The Post container*/
+.pstcntnr button{
+  height:2em;
+  width:4em;
+  border-radius:2em;
+}
+.pstcntnr h4{
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+}
+.pstcntnr p{
+  margin-top:0.2em;
+  margin-bottom:0.2em;
+  padding-bottom:0.2em;
+  font-size:1em;
+}
+.pstcntnr img{
+  height:4em;
+  width:4em;
+  float:left;
+  border:1px solid blue;
+  margin-top:0.2em;
+  margin-bottom:0.02em;
+  margin-right:0.5em;
+  margin-left:0.5em;}
+.pstcntnr div{ 
+            background-size:cover;
+            border:2px solid black; 
+            margin-top:1em;
+            margin-bottom:1em;
+        }
+/*Post container [ending]*/
+/*The Box model*/
+.contaner { 
+            width:340px; 
+            height:140px; 
+            padding-top:0px; 
+            padding-bottom:0px;
+            padding-left:15px; 
+            padding-right:15px; 
+        } 
+#st-box { 
+            float:left; 
+            width:150px; 
+            height:140px; 
+            padding-top:15px;
+            padding-right:0px;
+            padding-left:25px;
+        } 
+#nd-box { 
+            float:left; 
+            width:140px; 
+            height:140px; 
+            padding:2px;
+            margin-left:20px;
+            margin-right:0px; 
+            margin-top:2em;
+            margin-bottom:0;
+        }</style></head> 
+ <body> 
+  <!--THE NAVIGATION DIV [STARTING]--> 
+  <div class="cntnr" style="height:40px; width:100%;"> 
+   <!--Sidenav Div---> 
+   <div class="sidenav" style="margin-top:5px;margin-left:3px;"> 
+    <button class="dropdown-btn" style="height:33px;color:white;background-color: green; text-align:center;padding-top:0px;padding-bottom:1px;"> 
+     <hr class="btn" style="margin-top:5px;"> 
+     <hr class="btn"> 
+     <hr class="btn"> <i class="fa fa-caret-down"></i> </button> 
+    <div class="dropdown-container"> 
+     <a href="#">Electronics Notes</a> 
+     <a href="robotics.html">ROBOTICS</a> 
+     <a href="trendingskills.html">TRENDING SKILLS</a> 
+     <a href="programing.html">Programing</a> 
+     <a href="myprojects.html">MY PROJECTS</a> 
+    </div> 
+   </div> 
+   <!--Sidenav Div [Ending]--> 
+   <!--Topnav Div--> 
+   <div class="2ndnav" style="margin-top:2px;margin-left:17%;width:85%; height: 32px;"> 
+    <ul id="topnav" style="margin-top:13px; height:33px; width:78%" ;> 
+     <li class="tpnv"><a href="index.html">Home</a></li> 
+     <li class="tpnv"><a href="Downloads.html">Downloads</a></li> 
+     <li class="tpnv"><a href="About.html">About</a></li> 
+     <li clss="tpnv" style="float:right;"><a href="#" style="padding:2px;"><img src="https://drive.google.com/uc?id=19bQLCO2r-hSI02j6ll_1H9KihzAlIbpA" style="height:30px;width:30px;"></a></li> 
+    </ul> 
+   </div> 
+   <!--Topnav Div [Ending]--> 
+  </div> 
+  <!--THE NAVIGATUON DIV [ENDING]--> 
+  <!--THE LOGO  DIV [STARTING]--> 
+  <center> 
+   <div class="logo" style="width:21em;"> 
+    <img style="height:5em;width:20em;" src="https://drive.google.com/uc?id=1AI6QCn7GNfKo09oitfIC3d3sLq4a88Tw"> 
+   </div> 
+  </center> 
+  <!--THE LOGO DIV [ENDING]--> 
+  <!--THE CONTENT DIV [STARTING]--> 
+  <div class="content"> 
+   <br> 
+   <hr> 
+   <p style="margin-top:3px;margin-bottom:0px;;color:white;text-align:center;font-size:1.4em;font-family:Times New Roman,Courier,Serif;">ROBOTICS</p> 
+   <hr> 
+   <div class="cnt">
+     Robotics is an interdisplinary field that integrates Computer science and engineering. It involves design, construction, operation, and use of robots. The goal of robotics is to design machines that can help and assist humans. It integrates fields of mechanical engineering, electrical engineering, information engineering, mechatronics, electronics, bioengineering, control engineering, software engineering, among others. 
+   </div> 
+   <br> 
+   <br> 
+   <b style="color:white;text-decoration:underline;font-size:1.3em">Topics To Be Covered:</b> 
+   <ul id="topics"> 
+    <li><a href="#whatrobo">What is Robotics?</a></li> 
+    <li><a href="#typesrobo">Types Of Robots</a></li> 
+    <li><a href="#usesrobo">Use of Robotics</a></li> 
+    <li><a href="#futurerobo">Future of Robotics</a></li> 
+   </ul> 
+   <br> 
+   <br> 
+   <p id="whatrobo" style="text-align:center;color:white;text-decoration:underline;font-size:1.3em">What is Robotics?</p> 
+   <center> 
+    <img src="robotics.jpg" style="border:1px solid white;margin:2em;height:10em;width:" device-width";"> 
+   </center> 
+   <div class="cnt">
+     Robotics is the intersection of science, engineering and technology that produces machines, called robots, that substitute for (or replicate) human actions. Pop culture has always been fascinated with robots. R2-D2. Optimus Prime. WALL-E. These over-exaggerated, humanoid concepts of robots usually seem like a caricature of the real thing...or are they more forward thinking than we realize? Robots are gaining intellectual and mechanical capabilities that don’t put the possibility of a R2-D2-like machine out of reach in the future. 
+    <br> 
+    <br> Robotics develops machines that can substitute for humans and replicate human actions. Robots can be used in many situations and for many purposes, but today many are used in dangerous environments (including inspection of radioactive materials, bomb detection and deactivation), manufacturing processes, or where humans cannot survive (e.g. in space, underwater, in high heat, and clean up and containment of hazardous materials and radiation). 
+    <br> 
+    <br> Robots can take on any form but some are made to resemble humans in appearance. This is said to help in the acceptance of a robot in certain replicative behaviors usually performed by people. Such robots attempt to replicate walking, lifting, speech, cognition, or any other human activity. Many of today's robots are inspired by nature, contributing to the field of bio-inspired robotics. 
+   </div> 
+   <p id="typesrobo" style="text-align:center;color:white;text-decoration:underline;font-size:1.3em">Types of Robots</p> 
+   <center> 
+    <img src="types-of-robots.jpg" style="border:1px solid white;margin:2em;height:10em;width:" device-width";"> 
+   </center> 
+   <div class="cnt">
+     We can see a variety of robots used for different applications in the world today, and as technology advances, robots are likely to play a greater and greater role in our lives. The different types of robots and their applications vary greatly, from industrial robots to concierge robots at commercial buildings. We will take a closer look about some of the robots used in different fields as of our requirements. 
+    <div class="typ"> 
+     <h3>Industrial robots</h3> 
+    </div> The types of industrial robots in service today vary greatly, but they are usually programmable, articulated arms that are stationary yet capable of moving on various axes. They are used in a number of applications in the manufacture of goods, such as welding, painting and assembly. Industrial robots are extremely quick and precise and offer manufacturers great cost-saving benefits. According to the International Federation of Robotics (IFR), there will be around 2.6 million industrial robots in operation by 2019. Industrial robots are also used in outer space for construction and other tasks. 
+    <div class="typ"> 
+     <h3>Domestic robots</h3> 
+    </div> No doubt you will have seen some domestic robots for sale in stores. These robots are used to perform household chores and include pool cleaning robots, robot vacuum cleaners and gutter cleaning robots. Guardforce Hong Kong also supplies cleaning robots suitable for larger, commercial premises. 
+    <div class="typ"> 
+     <h3>Military and emergency response robots</h3> 
+    </div> Robots are ideal for use in the military or for emergency response where the situation may be too dangerous for humans. The military use bomb disposal robots and drones among others, and emergency response teams use aerial, ground and underwater search and rescue robots. These types of robots are able to endure harsh conditions and traverse difficult terrain which also makes them suitable for exploration under the sea or even other planets, such as the Mars Curiosity Rover. 
+    <div class="typ"> 
+     <h3>Medical robots</h3> 
+    </div> The most common type of medical robot you will see is a surgery robot. In robot-assisted surgery, the surgeon controls a robot, either through a telemanipulator or computer, to perform very delicate medical procedures; therefore, reducing the risks involved. In the future, a surgeon may even be able to perform robot-assisted operations remotely from anywhere in the world. 
+    <div class="typ"> 
+     <h3>Service robots</h3> 
+    </div> Service robots are a broad category of robots used to perform various service-related tasks. The most common types of service robots you will see are concierge robots and hospitality robots. Guardforce Hong Kong, for instance, has launched a concierge robot which automates visitor registration, controls access points through facial recognition and offers multi-media information, making it perfect for commercial buildings, events and exhibitions. Guardforce also has a hospitality robot for malls which provides a shopping guide, a hand shake and chat function and the ability for customers to download coupons. It makes for a perfect, single-point customer service solution. 
+   </div> 
+   <p id="usesrobo" style="text-align:center;color:white;text-decoration:underline;font-size:1.3em">Uses of Robotics</p> 
+   <center> 
+    <img src="whatrobo.jpeg" style="border:1px solid white;margin:2em;height:10em;width:" device-width";"> 
+   </center> 
+   <div class="cnt">
+     As more and more robots are designed for specific tasks this method of classification becomes more relevant. For example, many robots are designed for assembly work, which may not be readily adaptable for other applications. They are termed as "assembly robots". For seam welding, some suppliers provide complete welding systems with the robot i.e. the welding equipment along with other material handling facilities like turntables, etc. as an integrated unit. Such an integrated robotic system is called a "welding robot" even though its discrete manipulator unit could be adapted to a variety of tasks. Some robots are specifically designed for heavy load manipulation, and are labeled as heavy-duty robots. 
+    <br>Some of the other uses of robots are listed below: 
+    <br> 
+    <div class="typ"> 
+     <h3>Manufacturing</h3> 
+    </div> The manufacturing industry is probably the oldest and most well-known user of robots. These robots and co-bots (bots that work alongside humans) work to efficiently test and assemble products, like cars and industrial equipment. It’s estimated that there are more than three million industrial robots in use right now. 
+    <div class="typ"> 
+     <h3>Logistics</h3> 
+    </div> Shipping, handling and quality control robots are becoming a must-have for most retailers and logistics companies. Because we now expect our packages arriving at blazing speeds, logistics companies employ robots in warehouses, and even on the road, to help maximize time efficiency. Right now, there are robots taking your items off the shelves, transporting them across the warehouse floor and packaging them. Additionally, a rise in last-mile robots (robots that will autonomously deliver your package to your door) ensure that you’ll have a face-to-metal-face encounter with a logistics bot in the near future. 
+    <div class="typ"> 
+     <h3>Home</h3> 
+    </div> It’s not science fiction anymore. Robots can be seen all over our homes, helping with chores, reminding us of our schedules and even entertaining our kids. The most well-known example of home robots is the autonomous vacuum cleaner Roomba. Additionally, robots have now evolved to do everything from autonomously mowing grass to cleaning pools. 
+    <div class="typ"> 
+     <h3>Travel</h3> 
+    </div> Is there anything more science fiction-like than autonomous vehicles? These self-driving cars are no longer just imagination. A combination of data science and robotics, self-driving vehicles are taking the world by storm. Automakers, like Tesla, Ford, Waymo, Volkswagen and BMW are all working on the next wave of travel that will let us sit back, relax and enjoy the ride. Rideshare companies Uber and Lyft are also developing autonomous rideshare vehicles that don’t require humans to operate the vehicle. 
+    <div class="typ"> 
+     <h3>Healthcare</h3> 
+    </div> Robots have made enormous strides in the healthcare industry. These mechanical marvels have use in just about every aspect of healthcare, from robot-assisted surgeries to bots that help humans recover from injury in physical therapy. Examples of robots at work in healthcare are Toyota’s healthcare assistants, which help people regain the ability to walk, and “TUG,” a robot designed to autonomously stroll throughout a hospital and deliver everything from medicines to clean linens. 
+   </div> 
+   <p id="futurerobo" style="text-align:center;color:white;text-decoration:underline;font-size:1.3em">Future of Robotics</p> 
+   <center> 
+    <img src="futurerobo.png" style="border:1px solid white;margin:2em;height:10em;width:" device-width";"> 
+   </center> 
+   <div class="cnt">
+     In the last decade, the robotics industry has created millions of additional jobs led by consumer electronics and the electric vehicle industry, and by 2020, robotics will be a US$100 billion worth industry, as big as the tourism industry. For example, the rehabilitation robot market has grown 10 times between 2010 and 2016, thanks to advancements in rehab/therapy robots, active prostheses, exoskeletons, and wearable robotics. According to a report, in short, the very next decade robots will become vital components in a number of applications, and robots paired with AI will be able to perform complex actions that are capable of learning from humans, driving the intelligent automation phenomenon. 
+    <br> 
+    <br> Most certainly, in the near future, and as for biological systems, Robotics will be submitted to a selective pressure under which most of its branches and authors will change. All of that will happen because of several factors: the enormous costs of production and maintenance of such machines; because of the ecosystemic and energetic costs of the robots, which are similar if not higher than any other machine; likely due to the saturation of an already seemingly fragile market. Because of that, it is quite important to try to predict the future of intelligent machines in order to focus one’s efforts on the appropriate field. 
+    <br> 
+    <br> At the moment, the most innovative branch is Environmental and Alternately Powered Robotics that is attracting interests from different Institutes and Industries. Anyway, few are the existing application (i.e.: toys, navigation, etc.) and they do not represent a valuable set by which we could evaluate their effective potentialities. Nevertheless, they theoretically represent a quite important goal since a big obstacle in this machine-driven society is around the energy costs, and renewable energies in Robotics, as in all other applications seem to be the unique answer. 
+    <br> 
+    <br> As observed by the report, it appears that Industries’ Automation is the leader of such a world while a number of applications are consolidating themselves or about to emerge and to play a consistent role in Robotics research and production. They are Healthcare, Surgery, Housekeeping, Autonomous Vehicles, and, in part, Entertainment. 
+    <br>Moreover, when it comes to branches that seem to lose the affection of markets and researches, as for example Humanoids, and those who are gaining interests, as for example Alternately Powered Robotics. 
+   </div> 
+   <p id="summary" style="text-align:center;color:white;text-decoration:underline;font-size:1.3em">Summary</p> 
+   <div class="cnt">
+     Now its time for the Summary of this Article,I know the theory section is large and boring also. 
+    <br> But what if you want to enter in this field from beginning?Is it too hard to do? 
+    <br> Then the answer is NO!. Anyone Can enter in this field having little bit knowledge in Electronics and programming language. 
+    <br> 
+    <br>If Someone Wants to Make His/Her Career in Robotics Then He/She Should Start From the Concepts of 
+    <a href="microprocessor.html">Microprocessors</a>, 
+    <a href="microcontroller.html">Microcntrollers</a>, 
+    <a href="#">Sensors</a>, Working and uses of different 
+    <a href="#">Electronics Components</a> etc... 
+    <br>Then After,they Should Start their journey By Making some basic projects using 
+    <a href="arduino.html">Arduino</a> and 
+    <a href="rasberrypi.html">Rasberry pi.</a> 
+    <br> Don't Worry about Anything, We are here to provide you indepth knowledge about all of these through our precise and perfect study materials related to Robotics and Electronics. 
+    <br> So Stay tuned with us to know more about the "World of Robotics". 
+   </div> 
+  </div> 
+  <!--THE CONTENT DIV [ENDING]--> 
+  <!--Post Section--> 
+  <section style="padding:0.7em;margin:0;border:2px solid white;border-radius:1em;background-size:cover;"> 
+   <hr style="margin-bottom:0;"> 
+   <p id="rltdpost" style="margin:0.5em;text-align:center;color:white;text-decoration:underline;font-size:1.3em">RELATED POSTS:</p> 
+   <hr style="margin-top:0;"> 
+   <div class="pstcntnr"> 
+    <div id="arduino"> 
+     <p><img src="arduino.jpg"> </p> 
+     <h4><a href="arduino.html">Arduino</a></h4> Arduino Uno is a microcontroller board based on the ATmega328P. It has 14 digital input/output pins (of which 6 can be used as PWM outputs), 6 analog... 
+     <a href="arduino.html"><button>more</button></a> 
+    </div> 
+    <div class="microprocessor"> 
+     <p><img src="microprocessor.jpg"> </p> 
+     <h4><a href="microprocessor.html">Microprocessor</a></h4> A microprocessor is an electronic component that is used by a computer to do its work. It is a central processing unit on a single integrated.... 
+     <a href="microprocessor.html"><button>more</button></a> 
+    </div> 
+    <div id="microcontroller"> 
+     <p><img src="microcontroller.jpg"> </p> 
+     <h4><a href="microcontroller.html">Microcontroller</a></h4> A microcontroller (MCU for microcontroller unit) is a small computer on a single metal-oxide-semiconductor integrated circuit (IC)..... 
+     <a href="microcontroller.html"><button>more</button></a> 
+    </div> 
+    <div id="rasberrypi"> 
+     <p><img src="rasberrypi.jpg"> </p> 
+     <h4><a href="rasberrypi.html">Rasberrypi</a></h4> Raspberry Pi is a series of small single-board computers developed in the United Kingdom by the Raspberry Pi Foundation in association with.... 
+     <a href="rasberrypi.html"><button>more</button></a> 
+    </div> 
+   </div> 
+  </section> 
+  <!--Post Section [Ending]--> 
+  <!--The Footer--> 
+  <footer id="grad"> 
+   <hr> 
+   <p style="margin-top:3px;margin-bottom:0px;text-align:center;color:white;font-family:Times New Roman,Courier,Serif;">RoBoTrOnIx MaNiA </p> 
+   <p style="margin-top:0px;text-align:center;color:white;font-family:Times New Roman,Courier,Serif;font-size:8px;">Quality Always Beats Quantity</p> 
+   <hr> 
+   <div style="text-align:center;margin-top:5px;"> 
+    <b style="color:white;font-size:1em;">About The Site</b> 
+    <br> 
+    <p style="color:white;font-size:0.8em;text-align:center;">This site is Developed To Provide Basic Knowledge About The Robotics and Electronics </p> 
+   </div> 
+   <center> 
+    <div class="contaner"> 
+     <div id="st-box"> 
+      <br> 
+      <a class="ftr" href="index.html">Home</a> 
+      <br> 
+      <a class="ftr" href="Downloads.html">Downloads</a> 
+      <br> 
+      <a class="ftr" href="About.html">About</a> 
+      <br> 
+      <a class="ftr" href="About.html">Contact us</a> 
+      <br> 
+      <i style="margin-right:70px;color:white;float:right;font-size:8px;font-family:Cursive;">……@2021</i> 
+     </div> 
+     <!--Contact us div--> 
+     <div id="nd-box"> 
+      <br> 
+      <i style="text-align:center;color:white;font-size:1.2em;font-family:cursive;">--Contact Us on--</i> 
+      <br> 
+      <img src="https://drive.google.com/uc?id=1A8AcqfBeofRi6fa6ADVJD-socYnCt808" class="social"> 
+      <img src="https://drive.google.com/uc?id=1A95w9yUD_MnI49_2tCgTBMBLvsL8jU5f" style="margin-top:0px;margin-bottom:3px;margin-right:5px;margin-left:5px;height:30px;width:30px;"> 
+      <img src="https://drive.google.com/uc?id=1A5WTwbEe0UoF0HOpXqz74AWFvBE784FA" class="social"> 
+      <br> 
+      <img src="https://drive.google.com/uc?id=19XhSIhBo9lzpBZ7kef08Ho40GO6Byrwt" style="height:30px;width:30px;margin-top:2px;margin-bottom:3px;margin-right:5px;margin-left:5px;"> 
+      <img src="https://drive.google.com/uc?id=19mxdCvl7jVm1bmBCsMaXt5sQdhkoV5Hn" style="height:28px;width:28px;margin-top:2px;margin-bottom:3px;margin-right:5px;margin-left:5px;"> 
+      <img src="https://drive.google.com/uc?id=19wPxBmXKExilA_L7xNKOqddwUV6TyzQc" class="social"> 
+     </div> 
+     <!--Contact us div [ending]--> 
+    </div> 
+   </center> 
+   <div style="margin-right:2px;font-size:10px;color:white;float:right;text-align:right;">
+     Created By Shubham Kumar 
+   </div> 
+  </footer>  
+ 
+<script type="text/javascript" id="dcoder_script">//* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}</script></body></html>
